@@ -1,2 +1,6 @@
 # My_Python
-All i've done with python
+All I've done with python
+---
+### Curses
++ __Sistemas de percepcion__ (MINCAR - UPV/EHU):
+
