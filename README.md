@@ -1,6 +1,7 @@
 # My_Python
 All I've done with python
 ---
-### Curses
-+ __Sistemas de percepcion__ (MINCAR - UPV/EHU):
+### Courses
++ __Sistemas de percepcion (MINCAR - UPV/EHU)__:
+    - 7 Prácticas: 4.370 lineas
 
