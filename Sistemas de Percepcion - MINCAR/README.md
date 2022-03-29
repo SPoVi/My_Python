@@ -1,26 +1,38 @@
-# Prácticas de visión artificial Sistemas de Percepción - Incar - 
+# Prácticas de visión artificial Sistemas de Percepción - MINCAR - 
+---
+## Practicas
+- Practica 0 (220 lineas)
+    - T00 Bienvenida Python
+    - T01 Cargar imagen
+    - T02 Plantilla estudiante
 
-* El desarrollo de las prácticas equivale a un 30% de la nota de la asignatura.
-* Para simplificar el trabajo del alumno, no se pide informe de prácticas como tal.
-* Sin embargo, se pide que los alumnos utilicen un sistema de control de versiones sobre el que realizarán sus prácticas.
-* Todos los cambios desarrollados en la práctica se almacenarán en el control de versiones.
-* Para ello:
-    * Todo estudiante deberá generar una cuenta en gitlab (www.gitlab.com).
-    * Un estudiante del grupo de laboratorio deberá realizar un 'Fork' de este proyecto gitlab en su cuenta de usuario.
-        * Este fork genera una copia de este proyecto que será el que utilice el estudiante.
-        * Sobre este nuevo proyecto, el estudiante dará acceso al profesor de la asignatura como reporter y al resto de compañeros de grupo
-    * Los estudiantes irán actualizando sus cambios en el repositorio de código según van realizando las prácticas.
-    
-## Instalación del entorno:
+- Practica 1 (584 lineas)
+    - T01 Operaciones basicas
+    - T02 Plantilla
 
-Para la instalación correcta del entorno de desarrollo en tu PC necesitas instalar lo siguiente:
+- Practica 2 (837 lineas)
+    - T01 Operaciones Histograma
+    - T02 Umbralizando niveles gris
+    - T03 Umbralizando niveles color
 
+- Practica 3 (742 lineas)
+    - T01 Filtrado espacial
+    - T02 Filtrado morfologico
 
+- Practica 4 (752 lineas)
+    - T01 Conectividad
+    - T02 Extraccion de caracteristicas
 
-| Software  |   | Linux  | Windows  | Notas   |
-|---|---|---|---|---|
-| git |   |  apt-get install git-core | [git-extensions](https://sourceforge.net/projects/gitextensions/) | Sistema de control de versiones. En windows recomendamos utilizar git extensions  |
-| pycharm  |   |  [pycharm](https://www.jetbrains.com/pycharm/download) | [pycharm](https://www.jetbrains.com/pycharm/download)  |  IDE de desarrollo |
-|  Anaconda 3.7  |   | [Anaconda3](https://www.anaconda.com/download/)  |[Anaconda3](https://www.anaconda.com/download/)   | Distribución de python multi-entorno  |
+- Practica 5 (757 lineas)
+    - T01 Clasificacion no supervisada
+    - T02 Clasificaicon supervisada
+
+- Practica 6 (286 lineas )
+    - T01 Clasificacion de extracion de caracteristicas
+    - T02 Clasificacion de extracion de caracteristicas (sin haer)
+
+- Practica 7 (192 lineas)
+    - T01 Train CNN
+    - T02 Run CNN
 
 

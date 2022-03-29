@@ -139,6 +139,3 @@ if __name__ == "__main__":
     imagen_rgb = cargar_imagen(file_path)
     pixel_info = imagen_rgb[20,30,:]
     visualizar_imagen(imagen_rgb,titulo='Grupo 9, El valor RGB del pixel (20,30) es %d,%d,%d' % (pixel_info[0],pixel_info[1],pixel_info[2]),save_figure=True,figure_save_path='../data/out/practica0/fig_sample.png')
-
-
-

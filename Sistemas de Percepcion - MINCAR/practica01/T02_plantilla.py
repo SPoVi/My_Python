@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import skimage,skimage.io
 from practica00.T01_cargar_imagen import visualizar_imagen
+from practica00.T01_cargar_imagen import visualizar_imagenes
 
 file_img_01 = '../data/color/barrio_sesamo.jpg'
 file_img_02 = '../data/color/espinete.jpg'
@@ -29,9 +30,9 @@ def integrar_a_espinete():
     canal_G = img_grupo[:, :, 1]  # green
     canal_B = img_grupo[:, :, 2]  # red
 
-    visualizar_imagen(canal_R, titulo='Grupo color Rojo', save_figure = True, figure_save_path = '../data/out/practica2/fig_espinete_r.png')
-    visualizar_imagen(canal_G, titulo='Grupo color Verde', save_figure = True, figure_save_path = '../data/out/practica2/fig_espinete_g.png')
-    visualizar_imagen(canal_B, titulo='Grupo color Azul', save_figure = True, figure_save_path = '../data/out/practica2/fig_espinete_b.png')
+    visualizar_imagen(canal_R, titulo='Grupo color Rojo', save_figure = True, figure_save_path ='../data/out/practica1/fig_espinete_r.png')
+    visualizar_imagen(canal_G, titulo='Grupo color Verde', save_figure = True, figure_save_path ='../data/out/practica1/fig_espinete_g.png')
+    visualizar_imagen(canal_B, titulo='Grupo color Azul', save_figure = True, figure_save_path ='../data/out/practica1/fig_espinete_b.png')
 
     '''
         NOMBRE:
@@ -47,21 +48,21 @@ def integrar_a_espinete():
 
 
     visualizar_imagen(img_for_r, titulo='Imagen solo con tonos rojos', save_figure = True,
-                      figure_save_path = '../data/out/practica2/fig_espinete_r2.png')
+                      figure_save_path ='../data/out/practica1/fig_espinete_r2.png')
 
     img_for_g = img_grupo.copy()
     img_for_g[:, :, 0] = 0                  # canal rojo a zero
     img_for_g[:, :, 2] = 0                  # canal azul a zero
 
     visualizar_imagen(img_for_g, titulo='Imagen solo con tonos verdes', save_figure = True,
-                      figure_save_path = '../data/out/practica2/fig_espinete_g2.png')
+                      figure_save_path ='../data/out/practica1/fig_espinete_g2.png')
 
     img_for_b = img_grupo.copy()
     img_for_b[:, :, 0] = 0  # canal rojo a zero
     img_for_b[:, :, 1] = 0  # canal verde a zero
 
     visualizar_imagen(img_for_b, titulo='Imagen solo con tonos azules', save_figure = True,
-                      figure_save_path = '../data/out/practica2/fig_espinete_b2.png')
+                      figure_save_path ='../data/out/practica1/fig_espinete_b2.png')
     '''
         NOMBRE: Sergio
         TODO:
@@ -72,19 +73,19 @@ def integrar_a_espinete():
     # Cara de coco
     img_roi_coco = img_in[40:140, 320:410, :] #Vertical, Horizontal
     visualizar_imagen(img_roi_coco, titulo='Coco', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_cara_coco.png')
+                      figure_save_path='../data/out/practica1/fig_cara_coco.png')
     # Cara de epi
     img_roi_epi = img_in[120:220, 90:210, :]
     visualizar_imagen(img_roi_epi, titulo='Epi', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_cara_epi.png')
+                      figure_save_path='../data/out/practica1/fig_cara_epi.png')
     # Cara de blas
     img_roi_blas = img_in[200:340, 120:230, :]
     visualizar_imagen(img_roi_blas, titulo='Blas', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_cara_blas.png')
+                      figure_save_path='../data/out/practica1/fig_cara_blas.png')
     # Cara de triki (monstruo de las galletas)
     img_roi_triki = img_in[30:120, 110:230, :]
     visualizar_imagen(img_roi_triki, titulo='Triki', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_cara_triki.png')
+                      figure_save_path='../data/out/practica1/fig_cara_triki.png')
 
 
     # Creacion subplot
@@ -99,6 +100,29 @@ def integrar_a_espinete():
     axs[1, 0].set_title('Blas')
     axs[1, 1].imshow(img_roi_triki)
     axs[1, 1].set_title('Triki')
+
+    # Guadar la imagen. Metodo 1
+    fig.savefig('../data/out/practica1/fig_caras_teleñecos_metodo1.png')
+
+    # Metodo 2
+    # Para guardar la igamen se ha creado una lista de imagenes y de titulos y ha sido necesario
+    # importar otra funcion 'visiualizar_imagenes'
+    f1 = img_roi_coco.copy()
+    t1 = 'Coco'
+    f2 = img_roi_epi.copy()
+    t2 = 'Epi'
+    f3 = img_roi_blas.copy()
+    t3 = 'Blas'
+    f4 = img_roi_triki.copy()
+    t4 = 'Triki'
+
+    lista_imagenes = [f1, f2, f3, f4]
+    lista_titulos = [t1, t2, t3, t4]
+
+    '''visualizar_imagenes(lista_imagen, lista_titulos, n_row, n_col, block=True, save_figure=False,
+                            figure_save_path='../data/out/fig_sample.png', rescale_colors=True):'''
+    visualizar_imagenes(lista_imagenes,lista_titulos,2,2, block=True, save_figure=True,
+                      figure_save_path='../data/out/practica1/fig_caras_teleñecos_metodo2.png')
 
     '''
         NOMBRE:
@@ -159,8 +183,8 @@ def integrar_a_espinete():
     # La imagen final se coloca en su respectiva posicion de la imagen grupal
     img_barrio[170:170+rows, 430:430+cols] = dst
     # Se visualizan los resultados y se guardan
-    visualizar_imagen(img_barrio, titulo='Espinete con sus amigos',save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_espiyfriend_mascara.png')
+    visualizar_imagen(img_barrio, titulo='Espinete con sus amigos', save_figure=True,
+                      figure_save_path='../data/out/practica1/fig_espiyfriend_mascara.png')
 
 
 if __name__ == "__main__":

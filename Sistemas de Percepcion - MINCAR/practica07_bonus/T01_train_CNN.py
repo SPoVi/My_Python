@@ -38,7 +38,7 @@ model.summary()
 
 model.add(layers.Flatten())
 model.add(layers.Dense(64, activation='relu'))
-model.add(layers.Dense(10))
+model.add(layers.Dense(10,activation='softmax'))
 
 model.summary()
 
@@ -49,7 +49,7 @@ model.compile(optimizer='adam',
 history = model.fit(train_images, train_labels, epochs=10,
                     validation_data=(test_images, test_labels))
 
-
+model.save('mi_modelo.h5')
 plt.plot(history.history['accuracy'], label='accuracy')
 plt.plot(history.history['val_accuracy'], label = 'val_accuracy')
 plt.xlabel('Epoch')
@@ -59,4 +59,23 @@ plt.legend(loc='lower right')
 
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
-print(test_acc)
+# Prueba avion
+import skimage, skimage.io, skimage.transform, numpy
+mi_image_file = '../data/Tensorflow/avion.png'  # buscar un fichero de alguna img de las clases que exsisten
+# model = tf.keras.models.load_model('mi_modelo.h5')
+# Lo cargamos
+image_rgb = skimage.io.imread(mi_image_file).astype(float)/255.0
+# Lo recortamos a 32x32
+image_rgb_32x32 = skimage.transform.resize(image_rgb,(32,32), preserve_range=True)
+imagen_extendida = numpy.expand_dims(image_rgb_32x32, axis=0)
+print(imagen_extendida.shape)
+prediction = model.predict(imagen_extendida)
+print('::...RESULTADOS..::')
+print('\nPrediccion: {0}'.format(prediction))
+print('\nTest accuracy: {0}'.format(test_acc))
+
+# Identificacion de la clase
+posicion_clase = prediction.argmax()
+print('\nLa clase de la imagen es: {0}'.format(class_names[posicion_clase]))
+
+pass

@@ -101,8 +101,8 @@ def do_test03():
 
 
 
-    visualizar_imagen(img_in,titulo='Imagen original. Tamaño de la imagen (número de píxeles): %d' % (img_in.size),save_figure=True,figure_save_path='../data/out/practica2/fig_test03_in.png')
-    visualizar_imagen(img_out, titulo='Imagen gris. Tamaño de la imagen (número de píxeles): %d' % (img_out.size),save_figure=True,figure_save_path='../data/out/practica2/fig_test03_out.png')
+    visualizar_imagen(img_in, titulo='Imagen original. Tamaño de la imagen (número de píxeles): %d' % (img_in.size), save_figure=True, figure_save_path='../data/out/practica1/fig_test03_in.png')
+    visualizar_imagen(img_out, titulo='Imagen gris. Tamaño de la imagen (número de píxeles): %d' % (img_out.size), save_figure=True, figure_save_path='../data/out/practica1/fig_test03_out.png')
 
 
 
@@ -132,7 +132,7 @@ def do_test04():
     img_in = skimage.io.imread(file_img_01)             # Carga la imagen asignada al princpio del programa
 
     # Funcion visualizar imagen original
-    visualizar_imagen(img_in,titulo='imagen original',save_figure=True,figure_save_path='../data/out/practica2/fig_test04_in.png')
+    visualizar_imagen(img_in, titulo='imagen original', save_figure=True, figure_save_path='../data/out/practica1/fig_test04_in.png')
 
     # Con funciones de numpy. Canales.
     # Corregido nombre de variables
@@ -141,16 +141,16 @@ def do_test04():
     np_b = img_in[:, :, 2]  # blue
 
     # Visualiza la imagen segun el canal escogido y guarda las imagenes
-    visualizar_imagen(np_r, titulo='canal r',save_figure=True,figure_save_path='../data/out/practica2/fig_test04_r.png')
-    visualizar_imagen(np_g, titulo='canal g',save_figure=True,figure_save_path='../data/out/practica2/fig_test04_g.png')
-    visualizar_imagen(np_b, titulo='canal b',save_figure=True,figure_save_path='../data/out/practica2/fig_test04_b.png')
+    visualizar_imagen(np_r, titulo='canal r', save_figure=True, figure_save_path='../data/out/practica1/fig_test04_r.png')
+    visualizar_imagen(np_g, titulo='canal g', save_figure=True, figure_save_path='../data/out/practica1/fig_test04_g.png')
+    visualizar_imagen(np_b, titulo='canal b', save_figure=True, figure_save_path='../data/out/practica1/fig_test04_b.png')
 
 
     # Eliminar un canal (en este caso el verde)
     img_in[:, :, 1] = 0                 # canal green a zero
     img_in_un_canal_a_cero = img_in     # asignacion en variable
     # Carga imagen modificada
-    visualizar_imagen(img_in_un_canal_a_cero, titulo='imagen con un canal eliminado',save_figure=True,figure_save_path='../data/out/practica2/fig_test04_canal_eliminado.png')
+    visualizar_imagen(img_in_un_canal_a_cero, titulo='imagen con un canal eliminado', save_figure=True, figure_save_path='../data/out/practica1/fig_test04_canal_eliminado.png')
 
 def do_test05():
     '''
@@ -174,7 +174,7 @@ def do_test05():
 
     img_in = skimage.io.imread(file_img_elegida_estudiante)
     img_roi = img_in[15:350, 180:480,:]
-    visualizar_imagen(img_roi,titulo='imagen ROI',save_figure=True,figure_save_path='../data/out/practica2/fig_test05_roi.png')
+    visualizar_imagen(img_roi, titulo='imagen ROI', save_figure=True, figure_save_path='../data/out/practica1/fig_test05_roi.png')
 
 
 
@@ -212,7 +212,7 @@ def do_test06():
     img_out[15:350, 180:480, 2] = img_roi_gris
 
     visualizar_imagen(img_out, titulo='imagen reconstruida', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_test06_recon.png')
+                      figure_save_path='../data/out/practica1/fig_test06_recon.png')
 
 
 def do_test07():
@@ -237,7 +237,7 @@ def do_test07():
     img_out[10:320, 480:780, 2] = img_roi_gris
 
     visualizar_imagen(img_out, titulo='imagen reconstruida', save_figure=True,
-                       figure_save_path='../data/out/practica2/fig_test07_recon.png')
+                      figure_save_path='../data/out/practica1/fig_test07_recon.png')
 
 
 def do_test08():
@@ -280,22 +280,22 @@ def do_test08():
     # suma imagenes
     img_suma = img_in1+img_in2
     visualizar_imagen(img_suma, titulo='imagen suma', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_test08_suma.png')
+                      figure_save_path='../data/out/practica1/fig_test08_suma.png')
 
     # resta imagenes
     img_resta = img_in1 - img_in2
     visualizar_imagen(img_resta, titulo='imagen resta', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_test08_resta.png')
+                      figure_save_path='../data/out/practica1/fig_test08_resta.png')
 
     # resta imagenes absoluta
     img_resta_abs = np.abs(img_in1 - img_in2)
     visualizar_imagen(img_resta_abs, titulo='imagen resta abs', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_test08_resta_abs.png')
+                      figure_save_path='../data/out/practica1/fig_test08_resta_abs.png')
 
     # Blending
     img_blending = 0.30*img_in1 + 0.70*img_in2
     visualizar_imagen(img_blending, titulo='imagen blending', save_figure=True,
-                      figure_save_path='../data/out/practica2/fig_test08_blending.png')
+                      figure_save_path='../data/out/practica1/fig_test08_blending.png')
 
 
 
@@ -374,7 +374,7 @@ def do_test09():
     visualizar_imagen(dst, titulo='suma')
 
     img_base[0:rows, 0:cols] = dst
-    visualizar_imagen(img_base, titulo='logo_output',save_figure=True,figure_save_path='../data/out/practica2/fig_test09_mascara.png')
+    visualizar_imagen(img_base, titulo='logo_output', save_figure=True, figure_save_path='../data/out/practica1/fig_test09_mascara.png')
 
 
 
@@ -386,9 +386,7 @@ if __name__ == "__main__":
     # do_test05()
     # do_test06()
     # do_test07()
-    # do_test08()
-    do_test09()
-
-
+    do_test08()
+    # do_test09()
 
     input()
