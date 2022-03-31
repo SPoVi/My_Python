@@ -6,3 +6,7 @@
         - Output : [[0,0,0], [0,0,1]]
 
     - __nested_list__: Given the names and grades for each student in a class of N students, store them in a nested list and print the name(s) of any student(s) having the second lowest grade.
+
+    - __finding the percentatge__: The provided code stub will read in a dictionary containing key/value pairs of name:[marks] for a list of students. Print the average of the marks array for the student name provided, showing 2 places after the decimal.
+
+    - __finding_the_runner_up_score__: Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score.
