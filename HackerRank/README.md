@@ -46,4 +46,5 @@
 
 - __Plus minus__:Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with places after the decimal.
 
-- __Min and max sum__: Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. 
+- __Min and max sum__: Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers.
+    - __v2__: Codigo mejorado. Mas simple y corto.
