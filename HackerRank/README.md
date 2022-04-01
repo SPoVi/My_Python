@@ -48,3 +48,7 @@
 
 - __Min and max sum__: Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers.
     - __v2__: Codigo mejorado. Mas simple y corto.
+
+- __Time conversion__:Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
+
+- __Find median__: Mock test 1
