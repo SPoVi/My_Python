@@ -1,7 +1,6 @@
-# HackerRank
+# HackerRank - Possible exercises for job Interviews
 ----
-## Possible exercises for job Interviews
-#### Level 1 - One Star
+## Level 1 - One Star
 
 - __Lists__:
     - __list_comprehension__: You are given three integers 'x,y,z' and representing the dimensions of a cuboid along with an integer 'n' .Print a list of all possible coordinates given by (i,j,k) on a 3D grid where the sum of 'i+j+k'is not equal to 'n'.
@@ -15,6 +14,8 @@
 
     - __list_methods__: Initialize your list and read in the value of followed by lines of commands where each command will be of the types listed above. Iterate through each command in order and perform the corresponding operation on your list.
 
+    - __find a string__: Print the number of times that the substring occurs in the given string.
+
 - __Strings__:
 
     - __Split and Joint__: Split the text when " ", rejoin with "-".
@@ -26,6 +27,11 @@
 - __Tuples__:
 
     - __Tuples__: Given an integer, n , and n space-separated integers as input, create a tuple,t , of those n integers. Then compute and print the result of hash(t).
+---
+## Level 2 - Two Stars
+
+- __Lists__:
+    - __Minion Game__:
 ---
 ## EXAMS
 
