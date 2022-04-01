@@ -20,6 +20,8 @@
 
     -__Swap Case__: Change upper to lower and lower to upper letters in a string.
 
+    -__Mutations__:Read a given string, change the character at a given index and then print the modified string. 
+
 - __Tuples__:
     -__Tuples__:Given an integer, n , and n space-separated integers as input, create a tuple,t , of those n integers. Then compute and print the result of hash(t).
 ---
