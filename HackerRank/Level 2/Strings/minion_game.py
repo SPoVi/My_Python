@@ -76,9 +76,13 @@ vowels = ['A', 'E', 'I', 'O', 'U']
 s = raw_input()
 a = 0
 b = 0
+
+# La cantidad de letras que hay despues de la posicion comprobada será la cantidad
+    # de palabras que puede formar
+    
 for i, c in enumerate(s):  # crea lista de tuplas con (pos, valor) : [(0, hola), (1, mundo)]
     if c in vowels:
-        b += len(s) - i
+        b += len(s) - i #tamaño de la palbra - posicion del enumerate, la letra que se esta comprobando
     else:
         a += len(s) - i
         

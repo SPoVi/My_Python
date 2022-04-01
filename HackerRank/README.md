@@ -22,7 +22,9 @@
 
     - __Swap Case__: Change upper to lower and lower to upper letters in a string.
 
-    - __Mutations__: Read a given string, change the character at a given index and then print the modified string. 
+    - __Mutations__: Read a given string, change the character at a given index and then print the modified string.
+
+    - __Enumerate__: Example of enumerate()
 
 - __Tuples__:
 
