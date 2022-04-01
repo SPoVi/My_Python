@@ -15,8 +15,13 @@
 
     -__list_methods__:Initialize your list and read in the value of followed by lines of commands where each command will be of the types listed above. Iterate through each command in order and perform the corresponding operation on your list.
 
-- __Tuples__:
+- __Strings__:
+    -__Split and Joint__: Split the text when " ", rejoin with "-".
+
     -__Swap Case__: Change upper to lower and lower to upper letters in a string.
+
+- __Tuples__:
+    -__Tuples__:Given an integer, n , and n space-separated integers as input, create a tuple,t , of those n integers. Then compute and print the result of hash(t).
 ---
 ## EXAMS
 
