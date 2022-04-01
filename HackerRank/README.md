@@ -31,7 +31,7 @@
 ## Level 2 - Two Stars
 
 - __Lists__:
-    - __Minion Game__:
+    - __Minion Game__:Both players are given the same string,S. Both players have to make substrings using the letters of the string S.Player 1 has to make words starting with consonants. Player 2 has to make words starting with vowels.
 ---
 ## EXAMS
 
