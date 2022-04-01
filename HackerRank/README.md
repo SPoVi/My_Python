@@ -13,7 +13,7 @@
 
     - __finding_the_runner_up_score__: Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score.
 
-    - __list_methods__:Initialize your list and read in the value of followed by lines of commands where each command will be of the types listed above. Iterate through each command in order and perform the corresponding operation on your list.
+    - __list_methods__: Initialize your list and read in the value of followed by lines of commands where each command will be of the types listed above. Iterate through each command in order and perform the corresponding operation on your list.
 
 - __Strings__:
 
@@ -21,11 +21,11 @@
 
     - __Swap Case__: Change upper to lower and lower to upper letters in a string.
 
-    - __Mutations__:Read a given string, change the character at a given index and then print the modified string. 
+    - __Mutations__: Read a given string, change the character at a given index and then print the modified string. 
 
 - __Tuples__:
 
-    - __Tuples__:Given an integer, n , and n space-separated integers as input, create a tuple,t , of those n integers. Then compute and print the result of hash(t).
+    - __Tuples__: Given an integer, n , and n space-separated integers as input, create a tuple,t , of those n integers. Then compute and print the result of hash(t).
 ---
 ## EXAMS
 
