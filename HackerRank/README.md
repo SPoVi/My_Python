@@ -53,4 +53,6 @@
 
 - __Find median__: Mock test 1. Find the median of array of integers.
 
-- __Lonely integer__: Given an array of integers, where all elements but one occur twice, find the unique element. 
+- __Lonely integer__: Given an array of integers, where all elements but one occur twice, find the unique element.
+
+- __Diagonal difference__: Given a square matrix, calculate the absolute difference between the sums of its diagonals. 
