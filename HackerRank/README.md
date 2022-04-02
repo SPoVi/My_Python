@@ -26,7 +26,7 @@
 
     - __Enumerate__: Example of enumerate()
 
-    - __String validators__:You are given a string S.Your task is to find out if the string contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters. INTERESINTG SOLUTION USING LIST COMPREHENSION
+    - __String validators__: METHODS. You are given a string S.Your task is to find out if the string contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters. INTERESINTG SOLUTION USING LIST COMPREHENSION
 
 - __Tuples__:
 
