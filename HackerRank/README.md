@@ -51,4 +51,6 @@
 
 - __Time conversion__:Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
 
-- __Find median__: Mock test 1
+- __Find median__: Mock test 1. Find the median of array of integers.
+
+- __Lonely integer__: Given an array of integers, where all elements but one occur twice, find the unique element. 
