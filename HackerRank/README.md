@@ -56,3 +56,5 @@
 - __Lonely integer__: Given an array of integers, where all elements but one occur twice, find the unique element.
 
 - __Diagonal difference__: Given a square matrix, calculate the absolute difference between the sums of its diagonals. 
+
+- __Counting sort 1__: Given a list of integers, count and return the number of times each value appears as an array of integers.
