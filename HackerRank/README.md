@@ -53,21 +53,24 @@
 
 ---
 ## ONE WEEK PREPARATION KIT
+- __Day 1__:
+    - __Plus minus__:Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with places after the decimal.
 
-- __Plus minus__:Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with places after the decimal.
+    - __Min and max sum__: Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers.
+        - __v2__: Codigo mejorado. Mas simple y corto.
 
-- __Min and max sum__: Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers.
-    - __v2__: Codigo mejorado. Mas simple y corto.
+    - __Time conversion__:Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
 
-- __Time conversion__:Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
+    - __Find median__: Mock test 1. Find the median of array of integers.
 
-- __Find median__: Mock test 1. Find the median of array of integers.
+- __Day 2__:
+    
 
-- __Lonely integer__: Given an array of integers, where all elements but one occur twice, find the unique element.
+    - __Lonely integer__: Given an array of integers, where all elements but one occur twice, find the unique element.
 
-- __Diagonal difference__: Given a square matrix, calculate the absolute difference between the sums of its diagonals. 
+    - __Diagonal difference__: Given a square matrix, calculate the absolute difference between the sums of its diagonals. 
 
-- __Counting sort 1__: Given a list of integers, count and return the number of times each value appears as an array of integers.
+    - __Counting sort 1__: Given a list of integers, count and return the number of times each value appears as an array of integers.
 
 - __Day 3__:
     - __Zig zaga sequence__: Given an array of n distinct integers, transform the array into a zig zag sequence by permuting the array elements. 
