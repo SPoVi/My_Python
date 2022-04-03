@@ -68,3 +68,6 @@
 - __Diagonal difference__: Given a square matrix, calculate the absolute difference between the sums of its diagonals. 
 
 - __Counting sort 1__: Given a list of integers, count and return the number of times each value appears as an array of integers.
+
+- __Day 3__:
+    - __Zig zaga sequence__: Given an array of n distinct integers, transform the array into a zig zag sequence by permuting the array elements. 
