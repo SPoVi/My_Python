@@ -78,4 +78,5 @@ if __name__ == "__main__":
         #a = list(map(int, input().split()))
         a = [1, 2, 3, 4, 5, 6, 7, 8 , 9]
         
+        
         findZigZagSequence(a, n)
