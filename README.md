@@ -7,6 +7,7 @@ All I've done with python
 
 + [__Neural Networks in Python (Udemy)__:](https://github.com/SPoVi/Neural-Networks_in_Python_Udemy)
 
+
 ---
 ### WEBPAGES
 + __HackerRank__:
