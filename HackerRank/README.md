@@ -34,7 +34,10 @@
         - METHODS: ljust(width), rjust(width), center(width)
         - You are given a partial code that is used for generating the HackerRank Logo of variable thickness.Your task is to replace the blank (______) with rjust, ljust or center.
 
-    - __Tex Wrap__: You are given a string and width .Your task is to wrap the string into a paragraph of width . 
+    - __Tex Wrap__: You are given a string and width .Your task is to wrap the string into a paragraph of width .
+
+    - __Designer door mat__:
+        - METHODS: ljust(width), rjust(width), center(width)
 
 - __Tuples__:
 
