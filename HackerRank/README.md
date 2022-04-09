@@ -39,6 +39,8 @@
     - __Designer door mat__:
         - METHODS: ljust(width), rjust(width), center(width)
 
+    - __String formating__: Given an integer,n , print the following values for each integer i from  1 to n: decimal, octal , hexadecimal, binary
+
 - __Tuples__:
 
     - __Tuples__: Given an integer, n , and n space-separated integers as input, create a tuple,t , of those n integers. Then compute and print the result of hash(t).
