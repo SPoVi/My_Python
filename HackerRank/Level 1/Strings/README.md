@@ -28,4 +28,8 @@
 - __Alphabet Rangoli__: *****
     - METHODS: ljust(width), rjust(width), center(width)
     - LIST COMPREHENSION
-    - Description:  You are given an integer, N. Your task is to print an alphabet rangoli PATTERN of size N. 
+    - Description:  You are given an integer, N. Your task is to print an alphabet rangoli PATTERN of size N.
+
+- __Capitalize__: ***
+    - METHODS: capitalize(), split()
+    - Description: Given a full name, your task is to capitalize the name appropriately.
